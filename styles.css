@@ -1,0 +1,133 @@
+ body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    font-family: 'Arial', sans-serif;
+   
+    background: linear-gradient(135deg, #1a2a6c 0%, #b21f1f 100%);
+   
+
+
+    
+   
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+/* h1 { */
+    h2 {
+        font-size: 4rem;
+        color: #fff200;
+        font-weight: 700;
+        text-shadow: 4px 3px #e6198f;
+        font-family: 'Potta One', cursive;
+        opacity: 0;
+        transform: translateY(-30px); /* Start with a slight upward translation */
+        transition: opacity 1s ease, transform 1s ease; /* Apply transitions for opacity and transform */
+    }
+    
+    h2.visible {
+        opacity: 1;
+        transform: translateY(0); /* Text slides back to its original position */
+    }
+    
+    /* ---- */
+    /* font-size:4rem;
+        color:#fff200;
+        font-weight:700;
+        text-shadow:4px 3px #e6198f;
+        font-family:'Potta One',cursive;
+   
+    opacity: 0;
+    transition: opacity 1s ease; */
+/* } */
+
+h2.visible {
+    opacity: 1;
+}
+button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #000000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adding smooth transition for hover effects */
+}
+
+button:hover {
+    background-color: #333333; /* Slightly lighter black on hover */
+    transform: scale(1.05); /* Slightly scales up the button on hover */
+}
+/* --------------------------------------------- */
+/**img {
+    max-width: 100px;
+    height: 100px;
+    border-radius: 15px; /* Adds rounded corners */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    /* margin-top: 10px; /* Adds space between the image and the text */
+    /* transition: transform 0.3s ease; /* Adds a smooth transform effect */
+/* } 
+
+img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+/* }   */
+/* ----------------------------------------------- */
+@keyframes flyUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-300px); /* Adjust the distance as needed */
+    }
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 15px; /* Adds rounded corners */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Adds a subtle shadow */
+    margin-top: 10px; /* Adds space between the image and the text */
+    transition: transform 0.3s ease; /* Adds a smooth transform effect */
+    opacity:0;
+}
+
+img.fly {
+    animation: flyUp 2s ease-out forwards; /* Apply animation when .fly class is added */
+    opacity: 1;
+}
+
+img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+
+
+
+
+/* ----------------------------------------------------------- */
+/* button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: white;
+  
+    background-color: #000000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #000000;
+} */
